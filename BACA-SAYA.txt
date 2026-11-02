@@ -1,0 +1,41 @@
+SITUS HTML + CSS + JavaScript (tanpa framework, tanpa build)
+
+Cara melihat di komputer:
+  Buka file index.html dengan klik dua kali (Chrome/Edge/Firefox).
+
+Cara online (hosting):
+  Upload SELURUH ISI folder ini ke public_html (cPanel) atau seret ke Netlify/GitHub Pages.
+  Tidak butuh Node.js, PHP, atau database.
+
+Struktur:
+  index.html                 Beranda
+  produk/                    Katalog + 2 kategori: produk/indoor/ dan produk/outdoor/ (tiap kategori punya jenis & halaman detail produk)
+  artikel/  portofolio/  tentang-kami/  kontak/
+  404.html                   Halaman tidak ditemukan (aktif di hosting yang mendukung 404 kustom)
+  css/style.css              Seluruh tampilan (warna tema ada di bagian paling atas file)
+  js/main.js                 Tema gelap/terang, menu, slideshow hero, FAQ, filter kategori produk, animasi scroll
+  images/                    Semua gambar (WebP)
+
+Catatan:
+  - Font (Poppins & Manrope) dimuat dari Google Fonts, jadi perlu internet saat dibuka.
+  - Gambar yang belum ada (mis. images/proyek/proyek-07.webp, images/articles/32.webp) otomatis tampil
+    sebagai placeholder. Cukup taruh file dengan nama yang sama di folder itu untuk menggantinya.
+  - Situs ini dikunci Bahasa Indonesia (sama seperti proyek Next.js asal).
+  - Link internal memakai alamat relatif, sehingga bisa dibuka dari folder mana pun.
+
+Struktur produk (setelah dirombak):
+  Videotron Indoor
+    - Indoor Fine Pitch (P1.25, P1.53, P1.86)
+    - Indoor Standar    (P2, P2.5, P3)
+  Videotron Outdoor
+    - Outdoor Standar     (P4, P5, P6)
+    - Outdoor Jarak Jauh  (P8, P10)
+
+Cara menambah / mengubah produk:
+  - Salin satu folder produk, mis. produk/indoor/indoor-p2/, ganti nama folder & isi index.html,
+    lalu daftarkan kartunya di produk/index.html, halaman kategori, dan beranda.
+  - Gambar produk outdoor yang belum ada (tampil placeholder otomatis), taruh dengan nama ini:
+      images/products/outdoor-hero.webp (sampul kategori Outdoor)
+      images/products/outdoor-p4.webp, outdoor-p5.webp, outdoor-p6.webp, outdoor-p8.webp, outdoor-p10.webp
+      images/articles/36.webp (gambar artikel Videotron Outdoor)
+  - Spesifikasi produk Outdoor adalah nilai umum/contoh. Mohon dicocokkan dengan data resmi produk Anda.
